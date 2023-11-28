@@ -18,48 +18,46 @@ const pizzas = [
   createPizza(
     `Cheese`, 
     `Your favorite cheese pizza, with your choice of crust covered in classic marinara sauce and topped with gooey mozzarella cheese. It's anything but "plain."`, 
-    true,
+    true
   ),
   createPizza(
     `Pepperoni`, 
     `You literally can't go wrong with pepperoni and mozzarella cheese. Classic for a reason.`, 
-    false,
+    false
   ),
   createPizza(
     `Supreme`, 
     `This loaded pizza is the perfect choice for family dinner or a lunch with your crew. Includes pepperoni, seasoned pork, beef, mushrooms, green bell peppers and onions.`, 
-    false,
+    false
   ),
   createPizza(
     `Meat Lover's®`, 
     `Packed with pepperoni, Italian sausage, ham, bacon, seasoned pork and beef, this pizza is NOT messing around.`, 
-    false,
-    "https://www.pizzahut.com/assets/w/tile/thor/MeatLovers_RecipeTile_Web_175x210.png"
+    false
   ),
   createPizza(
     `Pepperoni Lover's®`, 
     `Ever wished your pepperoni pizza had more pepperoni? Of course you did. This oven-hot pizza has 50% more pepperoni than our average pizza pie.`, 
-    false,
-    // "https://www.pizzahut.com/assets/w/tile/thor/pizza_Pepperoni_Lovers.png"
+    false
   ),
   createPizza(
     `Veggie Lover's®`, 
-    `Description`, 
+    `Pizza is officially a vegetable. This garden delight has all the fresh veggie toppings you love: mushrooms, red onions, green bell peppers, Roma tomatoes and black olives.`, 
     true
   ),
   createPizza(
     `Backyard BBQ Chicken`, 
-    `Description`, 
+    `This BBQ pizza comes topped with grilled chicken, bacon and red onion. Who's the grillmaster now?`, 
     false
   ),
   createPizza(
     `Buffalo Chicken`, 
-    `Description`, 
+    `We took your favorite food and put it on a pizza. With tangy buffalo sauce, tender chicken and banana peppers, this beautiful masterpiece tastes like a football game feels.`, 
     false
   ),
   createPizza(
     `Hawaiian Chicken`, 
-    `Description`, 
+    `Give your taste buds a tropical vacation with this amped up Hawaiian pizza. It's got tasty chicken, ham, pineapple AND green peppers.`, 
     false
   ),
 ];
