@@ -1,0 +1,70 @@
+#PizzaMenu
+{
+  border: 1px solid black;
+  text-align: left;
+  
+  font-family: Verdana, sans-serif;
+  font-size: 11pt;
+  margin: 0;
+  padding: 24px;
+}
+#PizzaMenu h1 { font-family: Garamond, serif; font-size: 40pt; font-weight: bold; }
+#PizzaMenu h2 { font-family: Garamond, serif; font-size: 24pt; font-weight: bold; }
+#PizzaMenu h4 { font-family: Verdana, sans-serif; font-size: 12pt; font-weight: bold; }
+
+#PizzaMenu .Button
+{
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  background-color: #e21216;
+  padding: 12px 96px;
+  
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+#PizzaMenu .Button:hover { transition: 0.3s; box-shadow: 0 4px 6px #00000040;}
+
+/* # Menu Items */
+#PizzaMenu .PizzaMenuItem
+{
+  height: 128px;
+  
+  /* This got the desired effect. don't know why */
+  max-width: 50rem; 
+  border-bottom: 1px solid #cfcecc;
+  padding: 18px 0; 
+  
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+#PizzaMenu .PizzaMenuItem:hover { transition: 0.3s; background-color: #f6f6f6;}
+#PizzaMenu .PizzaMenuItem *{  margin: 0; padding: 0; }
+
+#PizzaMenu .PizzaMenuItem > .MenuItemImage 
+{
+  flex: 2;
+  border-radius: 8px;
+  background-color: #e21216;
+  min-width: 128px;
+  max-width: 256px;
+}
+
+#PizzaMenu .PizzaMenuItem .Popular 
+{ 
+  color: #e21216;
+  border: 1px solid #e21216;
+  border-radius: 3px; 
+  width: fit-content; 
+  padding: 3px;
+  font-size: 7pt;
+  text-transform: uppercase;
+  font-kerning: auto;
+  letter-spacing: 1pt;
+}
+
+#PizzaMenu .PizzaMenuItem > .MenuItemText { flex: 3; }
+#PizzaMenu .PizzaMenuItem > .MenuItemIcons {}
