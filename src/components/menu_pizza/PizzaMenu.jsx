@@ -12,9 +12,15 @@ function PizzaMenu() {
     const plist = document.querySelector('#PizzaMenu').querySelector(".PizzaList");
     plist.classList.toggle("collapsed");
     if(plist.classList.contains("collapsed"))
-      event.target.textContent = "See More";
+      event.target.innerHTML = `
+        See More 
+        <img class="icon_small" src="https://icons.iconarchive.com/icons/pictogrammers/material/256/chevron-down-icon.png" alt="" />  
+      `;
     else
-      event.target.textContent = "See Less";
+      event.target.innerHTML = `
+        See Less 
+        <img class="icon_small" src="https://icons.iconarchive.com/icons/pictogrammers/material/256/chevron-up-icon.png" alt="" />  
+      `;
   }
 
   return (

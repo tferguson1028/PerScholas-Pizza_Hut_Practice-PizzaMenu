@@ -28,8 +28,8 @@
   align-items: flex-start;
 }
 
-#PizzaMenu h1 { font-family: Garamond, serif; font-size: 40pt; font-weight: bold; }
-#PizzaMenu h2 { font-family: Garamond, serif; font-size: 24pt; font-weight: bold; }
+#PizzaMenu h1 { font-family: Garamond, serif; font-size: 40pt; font-weight: bold; margin: 0; margin-bottom: 24px;}
+#PizzaMenu h2 { font-family: Garamond, serif; font-size: 24pt; font-weight: bold; margin: 12px 0; }
 #PizzaMenu h4 { font-family: Verdana, sans-serif; font-size: 11pt; font-weight: bold; }
 
 #PizzaMenu .icon_small
@@ -53,6 +53,7 @@
   border-radius: 8px;
   background-color: #e21216;
   padding: 12px 96px;
+  margin: 12px 0 24px 0;
   
   text-transform: uppercase;
   font-weight: bold;
@@ -66,6 +67,11 @@
 #PizzaMenu .PizzaList.collapsed > *:nth-child(n+4)
 {
   display: none;
+}
+
+#PizzaMenu #information
+{
+  padding-top: 24px;
 }
 
 #PizzaMenu #SeeMore
@@ -169,10 +175,5 @@
 #PizzaMenu .PizzaMenuItem > .MenuItemIcons .infoIcon:hover
 {
   filter: contrast(90%) opacity(80%);
-}
-
-#PizzaMenu #information
-{
-  padding-top: 24px;
 }
 
