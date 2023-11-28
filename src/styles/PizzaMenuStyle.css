@@ -9,7 +9,7 @@
   box-sizing: border-box;
   text-align: left;
   
-  font-family: Verdana, sans-serif;
+  font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 11pt;
   margin: 0;
   padding: 24px;
@@ -28,7 +28,7 @@
 
 #PizzaMenu h1 { font-family: Garamond, serif; font-size: 40pt; font-weight: bold; margin: 0; margin-bottom: 24px;}
 #PizzaMenu h2 { font-family: Garamond, serif; font-size: 24pt; font-weight: bold; margin: 12px 0; }
-#PizzaMenu h4 { font-family: Verdana, sans-serif; font-size: 11pt; font-weight: bold; }
+#PizzaMenu h4 { font-size: 11pt; font-weight: normal; scale: 1.15 1; transform-origin: left; text-shadow: 0 0 0 black; }
 
 #PizzaMenu .icon_small
 {
