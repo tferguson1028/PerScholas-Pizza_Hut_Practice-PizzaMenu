@@ -12,7 +12,6 @@
 #PizzaMenu
 {
   box-sizing: border-box;
-  border: 1px solid black;
   text-align: left;
   
   font-family: Verdana, sans-serif;
@@ -20,6 +19,10 @@
   margin: 0;
   padding: 24px;
   padding-bottom: 0;
+  
+  
+  /* This got the desired effect. don't know why */
+  max-width: 50rem; 
   
   display: flex;
   flex-direction: column;
@@ -98,8 +101,6 @@
   min-height: 128px;
   max-height: fit-content;
   
-  /* This got the desired effect. don't know why */
-  max-width: 50rem; 
   border-bottom: 1px solid #cfcecc;
   padding-top: 18px;
   padding-bottom: 32px; 
