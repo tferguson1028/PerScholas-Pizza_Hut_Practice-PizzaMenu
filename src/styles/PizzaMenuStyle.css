@@ -23,7 +23,7 @@
   flex-direction: column;
   gap: 0;
   
-  align-items: flex-start;
+  align-items: flex-start;  
 }
 
 #PizzaMenu h1 { font-family: Garamond, serif; font-size: 40pt; font-weight: bold; margin: 0; margin-bottom: 24px;}
@@ -50,8 +50,13 @@
   border: 0;
   border-radius: 8px;
   background-color: #e21216;
-  padding: 12px 96px;
+  padding: 12px;
   margin: 12px 0 24px 0;
+  
+  width: 100%;
+  max-width: 300px;
+  
+  text-align: center;
   
   text-transform: uppercase;
   font-weight: bold;
@@ -64,15 +69,8 @@
 /* # Menu List */
 /* https://stackoverflow.com/a/19968303 */
 /* Hides 5th, to infinity children if the list is collapsed */
-#PizzaMenu .PizzaList.collapsed > *:nth-child(n+5)
-{
-  display: none;
-}
-
-#PizzaMenu #information
-{
-  padding-top: 24px;
-}
+#PizzaMenu .PizzaList.collapsed > *:nth-child(n+5) { display: none; }
+#PizzaMenu #information { padding-top: 24px; }
 
 #PizzaMenu #SeeMore
 {

@@ -1,11 +1,20 @@
 import logo from './logo.svg';
+
 import './App.css';
+import "./styles/Header_FooterStyle.css";
+
 import PizzaMenu from './components/menu_pizza/PizzaMenu';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <PizzaMenu />
+      <Header />
+      <div style={{padding: "0 5%"}}>
+        <PizzaMenu />
+      </div>
+      <Footer />
     </div>
   );
 }
