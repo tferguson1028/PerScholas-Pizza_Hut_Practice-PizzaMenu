@@ -5,11 +5,7 @@ function PizzaList({ contents }) {
   return (
     <div className='PizzaList'>
       {
-        contents.map((el, index) => 
-        {
-          console.log(index);
-          return <PizzaMenuItem key={index} index={index} pizza={el} />  
-        })
+        contents.map((el, index) => <PizzaMenuItem key={index} index={index} pizza={el} /> )
       }
     </div>
   )

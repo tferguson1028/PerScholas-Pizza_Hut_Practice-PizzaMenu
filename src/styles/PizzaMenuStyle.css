@@ -1,3 +1,8 @@
+#root *.hidden
+{
+  visibility: collapse;
+}
+
 #PizzaMenu
 {
   border: 1px solid black;
@@ -27,6 +32,14 @@
 
 #PizzaMenu .Button:hover { transition: 0.3s; box-shadow: 0 4px 6px #00000040;}
 
+/* # Menu List */
+/* https://stackoverflow.com/a/19968303 */
+#PizzaMenu .PizzaList.collapsed > *:nth-child(n+4)
+{
+  display: none;
+}
+
+
 /* # Menu Items */
 #PizzaMenu .PizzaMenuItem
 {
@@ -35,7 +48,8 @@
   /* This got the desired effect. don't know why */
   max-width: 50rem; 
   border-bottom: 1px solid #cfcecc;
-  padding: 18px 0; 
+  padding-top: 18px;
+  padding-bottom: 32px; 
   
   display: flex;
   flex-direction: row;
