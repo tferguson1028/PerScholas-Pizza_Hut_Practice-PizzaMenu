@@ -58,9 +58,10 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12pt;
+  transition: 0.3s;
 }
 
-#PizzaMenu .Button:hover { transition: 0.3s; box-shadow: 0 4px 6px #00000040;}
+#PizzaMenu .Button:hover { box-shadow: 0 4px 6px #00000040;}
 
 /* # Menu List */
 /* https://stackoverflow.com/a/19968303 */
@@ -106,8 +107,9 @@
   display: flex;
   flex-direction: row;
   gap: 16px;
+  transition: 0.3s;
 }
-#PizzaMenu .PizzaMenuItem:hover { transition: 0.3s; background-color: #f6f6f6;}
+#PizzaMenu .PizzaMenuItem:hover { background-color: #f6f6f6;}
 #PizzaMenu .PizzaMenuItem * {  margin: 0; padding: 0; }
 #PizzaMenu .PizzaMenuItem h4, #PizzaMenu .PizzaMenuItem .Popular {  margin-bottom: 4px; }
 
@@ -170,11 +172,12 @@
   
   top: -8px;
   right: -8px;
+  
+  transition: 0.3s;
 }
 
 #PizzaMenu .PizzaMenuItem > .MenuItemIcons .infoIcon:hover
 {
-  transition: 0.3s;
   filter: contrast(90%) opacity(80%);
 }
 
