@@ -129,13 +129,18 @@
 { 
   color: #e21216;
   border: 1px solid #e21216;
+  
   border-radius: 3px; 
   width: fit-content; 
   padding: 2px 4px;
+
+  font-family: Tahoma, sans-serif;
   font-size: 7pt;
-  text-transform: uppercase;
-  font-kerning: auto;
   letter-spacing: 1pt;
+  text-transform: uppercase;
+
+  scale: 1.1 1;
+  transform-origin: left;
 }
 
 #PizzaMenu .PizzaMenuItem > .MenuItemText { flex: 3; }
