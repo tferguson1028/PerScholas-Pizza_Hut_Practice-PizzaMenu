@@ -7,10 +7,14 @@ import "../../styles/PizzaMenuStyle.css"
 
 function PizzaMenu() {
   
-  function toggleItems()
+  function toggleItems(event)
   {
     const plist = document.querySelector('#PizzaMenu').querySelector(".PizzaList");
-    plist.classList.toggle('collapsed');
+    plist.classList.toggle("collapsed");
+    if(plist.classList.contains("collapsed"))
+      event.target.textContent = "See More";
+    else
+      event.target.textContent = "See Less";
   }
 
   return (
@@ -19,7 +23,14 @@ function PizzaMenu() {
       <h2>Find a restaurant to see our full menu and prices</h2>
       <PizzaMenuButton>Get Started</PizzaMenuButton>
       <PizzaList contents={pizzas} />
-      <button onClick={toggleItems}>See More</button>
+      <div id='information'>
+        <img className='icon_medium' src="https://icons.iconarchive.com/icons/pictogrammers/material/256/leaf-icon.png" alt='' />
+        Vegetarian
+      </div>
+      <button id="SeeMore" onClick={toggleItems}>
+        See More
+        <img className="icon_small" src="https://icons.iconarchive.com/icons/pictogrammers/material/256/chevron-down-icon.png" alt="" />  
+      </button>
     </div>
   )
 }

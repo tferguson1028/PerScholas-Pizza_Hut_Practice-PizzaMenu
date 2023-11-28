@@ -3,8 +3,15 @@
   visibility: collapse;
 }
 
+#PizzaMenu *
+{
+  position: relative;
+  box-sizing: border-box;
+}
+
 #PizzaMenu
 {
+  box-sizing: border-box;
   border: 1px solid black;
   text-align: left;
   
@@ -12,10 +19,32 @@
   font-size: 11pt;
   margin: 0;
   padding: 24px;
+  padding-bottom: 0;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  
+  align-items: flex-start;
 }
+
 #PizzaMenu h1 { font-family: Garamond, serif; font-size: 40pt; font-weight: bold; }
 #PizzaMenu h2 { font-family: Garamond, serif; font-size: 24pt; font-weight: bold; }
-#PizzaMenu h4 { font-family: Verdana, sans-serif; font-size: 12pt; font-weight: bold; }
+#PizzaMenu h4 { font-family: Verdana, sans-serif; font-size: 11pt; font-weight: bold; }
+
+#PizzaMenu .icon_small
+{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+#PizzaMenu .icon_medium
+{
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
 
 #PizzaMenu .Button
 {
@@ -39,11 +68,28 @@
   display: none;
 }
 
+#PizzaMenu #SeeMore
+{
+  background: none;
+  border: 0;
+  color: #266dcc;
+  font-size: 11pt;
+  
+  margin: 24px;
+  text-align: center;
+  align-self: center;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+#PizzaMenu #SeeMore:hover { text-decoration: underline; }
 
 /* # Menu Items */
 #PizzaMenu .PizzaMenuItem
 {
-  height: 128px;
+  min-height: 128px;
+  max-height: fit-content;
   
   /* This got the desired effect. don't know why */
   max-width: 50rem; 
@@ -56,13 +102,20 @@
   gap: 16px;
 }
 #PizzaMenu .PizzaMenuItem:hover { transition: 0.3s; background-color: #f6f6f6;}
-#PizzaMenu .PizzaMenuItem *{  margin: 0; padding: 0; }
+#PizzaMenu .PizzaMenuItem * {  margin: 0; padding: 0; }
+#PizzaMenu .PizzaMenuItem h4, #PizzaMenu .PizzaMenuItem .Popular {  margin-bottom: 4px; }
 
 #PizzaMenu .PizzaMenuItem > .MenuItemImage 
 {
   flex: 2;
   border-radius: 8px;
   background-color: #e21216;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  
+  height: 128px;
   min-width: 128px;
   max-width: 256px;
 }
@@ -73,7 +126,7 @@
   border: 1px solid #e21216;
   border-radius: 3px; 
   width: fit-content; 
-  padding: 3px;
+  padding: 2px 4px;
   font-size: 7pt;
   text-transform: uppercase;
   font-kerning: auto;
@@ -81,4 +134,45 @@
 }
 
 #PizzaMenu .PizzaMenuItem > .MenuItemText { flex: 3; }
-#PizzaMenu .PizzaMenuItem > .MenuItemIcons {}
+#PizzaMenu .PizzaMenuItem > .MenuItemText > *
+{
+  line-height: 1.5;
+}
+
+#PizzaMenu .PizzaMenuItem .vegPizzaIcon
+{
+  float: right;
+}
+
+#PizzaMenu .PizzaMenuItem > .MenuItemIcons 
+{ 
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -24px;
+
+  justify-content: end;
+}
+
+#PizzaMenu .PizzaMenuItem > .MenuItemIcons .infoIcon
+{
+  position: absolute;
+  box-sizing: content-box;
+  
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+  
+  top: -8px;
+  right: -8px;
+}
+
+#PizzaMenu .PizzaMenuItem > .MenuItemIcons .infoIcon:hover
+{
+  filter: contrast(90%) opacity(80%);
+}
+
+#PizzaMenu #information
+{
+  padding-top: 24px;
+}
+
