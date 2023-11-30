@@ -489,7 +489,7 @@ h6{
 }
 
 .delChg{
-  height: 
+  /* height:  */
 }
 
 .columns{
@@ -501,7 +501,7 @@ h6{
 }
 
 #food{
-  height: 130px
+  height: 130px;
 }
 
 .columns a{
