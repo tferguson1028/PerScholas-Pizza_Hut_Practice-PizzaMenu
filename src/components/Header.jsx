@@ -19,8 +19,8 @@ function Header() {
         </div>
         <div className='signIn'>
             <div className='sIImg'>
-                <img id="loginImg" src="https://st4.depositphotos.com/21557188/23286/v/950/depositphotos_232864112-stock-illustration-simple-person-icon-linear-symbol.jpg"
-                    width="50px" height="50px"></img>
+                <img id="loginImg" src="https://banner2.cleanpng.com/20180516/zq/kisspng-computer-icons-google-account-icon-design-login-5afc02dab4a218.0950785215264652427399.jpg"
+                    width="25px" height="25px"></img>
             </div>
             <div className='hutSign'>
                 <div className='hut'>HUT REWARDS</div>

@@ -1,3 +1,107 @@
+
+.main{
+  margin-left: 35px;
+  margin-right: 400px;
+}
+.title {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 13px;
+  font-family: "open_sans", sans-serif;
+  font-weight: bolder;
+}
+.main-title{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.d {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px; 
+  border-bottom: 1px solid #b9b9b9; 
+
+}
+
+.img img {
+  width: 180px; 
+  height: 100px; 
+  border-radius: 20%;
+  margin-right: 20px; 
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.t {
+  font-size: 17px;
+  font-weight: bold;
+
+}
+.des {
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px;
+}
+.button{
+  background-color: red;
+ font-weight: bold; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 300px; 
+  height: 30px;
+  text-align: center;
+}
+.span{
+  font-size: 12px;
+  padding: 50px;
+  border-bottom: 1px solid #b9b9b9; 
+
+}
+
+.signIn{
+  display: flex;
+  font-weight: bold;
+  font-size: 12pt;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 2px lightgray;
+  text-align: center;
+
+}
+
+.hutSign{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 10px;
+}
+
+.hut{
+  font-size: 10pt;
+  color: red;
+}
+
+
+.shoppingC{
+  display: flex;
+  font-weight: bold;
+  font-size: 12pt;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 2px lightgray;
+}
+
+.cart{
+  position: relative;
+}
+
+.Footer{
+  display: flex;
+}
+
 .nav{
   display: flex;
   justify-content: space-around;
@@ -5,15 +109,18 @@
   border: 1px solid lightgray;
   box-shadow: 2px 2px 2px lightgray;
 }
-
 .dAndM{
   display: flex;
-  margin: 5px;
-  margin-left: -25%;
+  margin: 10px;
+  margin-left: -10%;
+}
+#loginImg {
+  margin: 20px;
 }
 
 .logo{
-  margin-left: -12%;
+  margin-left: -6%;
+  margin-top: 10px;
 }
 
 .dropDown{
@@ -59,176 +166,35 @@ a:hover{
 
 .dropDown:hover .menu{ text-decoration: underline 3px solid red;}
 
+.first{
+  border-top: 1px solid #b9b9b9;
+  font-size: 12px;
 
-.signIn{
-  display: flex;
-  font-weight: bold;
-  font-size: 12pt;
-  border: 1px solid lightgray;
-  box-shadow: 2px 2px 2px lightgray;
+}
+.menu{
+  font-size: 12px;
 }
 
-.hutSign{
+.footerone {
+  display: flex; 
+  justify-content: space-around;
+  align-items: left;
+}
+
+.section {
+  text-align: left;
+}
+
+.app-link, .social-media-link {
+  margin: 10px;
+}
+.footertwo{
   display: flex;
   flex-direction: column;
-  align-content: center;
-  margin-left: 10px;
 }
 
-.hut{
-  font-size: 10pt;
-  color: red;
+.last{
+  border-top: 1px solid #b9b9b9;
+  border-bottom: 1px solid #b9b9b9;
+
 }
-
-
-#loginImg{
-  border-radius: 50%;
-}
-
-.shoppingC{
-  display: flex;
-  font-weight: bold;
-  font-size: 12pt;
-  border: 1px solid lightgray;
-  box-shadow: 2px 2px 2px lightgray;
-}
-
-.cart{
-  position: relative;
-}
-
-.Footer{
-  display: flex;
-}
-
-.Footer  a{
-  font-size: 9pt;
-}
-
-h6{
-  font-size: 10pt;
-}
-
-.para{
-  font-size: 9pt;
-}
-
-.firstAd{
-  background-image: url('https://www.pizzahut.com/assets/w/images/homepage_hero/Hero_TripleTreatBox2023_Desktop_1104x360.jpg');
-  background-repeat: no-repeat;
-  height: 360px;
-  width: auto;
-  margin: 10px;
-  border-radius: 10px;
-}
-
-.featured{
-  display: flex;
-  justify-content: center;
-}
-
-.fstFeat{
-  background-image: url('https://www.pizzahut.com/assets/w/images/homepage_deal/Sidekick_1299SC_SmallDesktop_v2_352x282.jpg');
-  height: 360px;
-  width: 300px;
-  background-repeat: no-repeat;
-  margin: 5px;
-  border-radius: 10px;
-}
-
-.sndFeat{
-  background-image: url('https://www.pizzahut.com/assets/w/images/homepage_deal/Sidekick_999L1T_SmallDesktop_v3_352x282.jpg');
-  height: 360px;
-  width: 300px;
-  background-repeat: no-repeat;
-  margin: 5px;
-  border-radius: 10px;
-}
-
-.thrdFeat{
-  background-image: url('https://www.pizzahut.com/assets/w/images/homepage_deal/Sidekick_BNYSustain_SmallDesktop_352x282.jpg');
-  height: 360px;
-  width: 300px;
-  background-repeat: no-repeat;
-  margin: 5px;
-  border-radius: 10px;
-}
-
-.sndFeatured{
-  display: flex;
-}
-
-.melts{
-  background-image: url('https://www.pizzahut.com/assets/w/images/homepage_deal/Melts_LargeDesktop_priced_sk_541x282.jpg');
-  height: 360px;
-  width: 400px;
-  background-repeat: no-repeat;
-  margin: 5px;
-  border-radius: 10px;
-}
-
-.wings{
-  background-image: url('https://www.pizzahut.com/assets/w/images/homepage_deal/Sidekick_BOTRADwings_LargeDesktop_541x282.jpg');
-  height: 360px;
-  width: 400px;
-  background-repeat: no-repeat;
-  margin: 5px;
-  border-radius: 10px;
-}
-
-.bttmLinks{
-  display: flex;
-}
-
-.lfLink{
-  background-image: url('https://www.pizzahut.com/assets/w/images/homepage_narrow_banner/HutRewards_MarketingBanner_541x282.jpg');
-  height: 260px;
-  width: 75%;
-  background-repeat: no-repeat;
-  margin: 5px;
-}
-
-.rtLink{
-  background-image: url('https://www.pizzahut.com/assets/w/images/homepage_narrow_banner/NowHiring_MarketingBanner_541x282.jpg');
-  height: 260px;
-  width: 100%;
-  background-repeat: no-repeat;
-  margin: 5px;
-}
-
-#topPop{
-  border-top: 2px solid red;
-  border-bottom: 1px solid red;
-  height: 5px;
-}
-
-.popTxt{
-  height: 300px;
-}
-
-.popular{
-  margin: 20px;
-}
-
-#btmPop{
-  border-top: 1px solid red;
-  border-bottom: 2px solid red;
-  height: 5px;
-}
-
-.popPizza{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-
-
-
-
-
-
-
-
-
-
