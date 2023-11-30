@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div style={{padding: "0 5%"}}>
+      <div style={{padding: "0 12%"}}>
         <PizzaMenu />
       </div>
       <Footer />
